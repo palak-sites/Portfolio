@@ -376,7 +376,7 @@ code{
   border-radius: var(--radius2);
   padding: 18px;
   box-shadow: var(--shadow);
-  border-color: #7b4e42;
+  border-color: #e4cac3;
   /* equal height + button bottom */
   display: flex;
   flex-direction: column;
@@ -450,4 +450,70 @@ code{
   }
   .grid-3{ grid-template-columns: repeat(3, 1fr); }
   .grid-4{ grid-template-columns: repeat(4, 1fr); }
+}
+/* FORCE equal height for all pricing cards */
+.pricing-grid {
+  align-items: stretch;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Highlighted (Standard) card */
+.price-card.featured {
+  border: 2px solid #e4cac3;
+  background: #fff;
+  transform: translateY(-10px);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
+  z-index: 2;
+  margin-top: 9px;
+}
+
+/* Make buttons stick to bottom equally */
+.price-card .btn {
+  margin-top: auto;
+}
+
+/* Most Popular badge FIX */
+.pill {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #d7b738;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.faq {
+  display: grid;
+  gap: 14px;
+  max-width: 720px;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+}
+
+.faq-item h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #6f6862;
+  line-height: 1.6;
 }
