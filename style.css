@@ -339,6 +339,23 @@ h1{
     radial-gradient(520px 170px at 82% 18%, rgba(156,91,74,0.22), transparent 60%),
     linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,241,231,1));
 }
+.demo-note{
+  margin: 0;
+  padding: 14px;
+  font-size: 14px;
+  color: #7f4638;
+  font-weight: 600;
+  text-align: center;
+
+  /* center inside thumbnail */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+
 
 .work-body{ padding: 14px; }
 
